@@ -5,7 +5,7 @@ require('dotenv').config({ path: __dirname + '/.env' })
 
 const app = express()
 
-app.use(cors({ origin: ['http://localhost:5173', 'http://localhost:5174'] }))
+app.use(cors({ origin: ['http://localhost:5173', 'http://localhost:5174', 'https://barber-dashboard-steel.vercel.app'] }))
 app.use(express.json())
 
 app.use('/api/barbers',      require('./routes/barbers'))
